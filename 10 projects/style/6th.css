@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+:root{
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+section{
+    scroll-margin: 50px;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgb(1, 1, 1, 0.05);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+nav ul li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+.nav-logo{
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+}
+.hero-section{
+    background-image: url(/images/mytunes/hero_image.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    color: white; 
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+.music-section{
+    padding: 90px;
+    background-color: var(--purple500);
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+button{
+    padding: 10px 15px;
+    border: transparent;
+    transition: 0.2s ease-in-out;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color: white;  
+}
+.secondary-btn{
+    background-color: var(--purple600);
+    color: white;
+    align-self: flex-start;
+    
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+.about-section{
+    display: grid;
+    gap: 50px;
+    min-height: 800px;
+    padding-top: 500px;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 50px;  
+}
+.about-section p{
+    padding: 0 300px;
+ }
+.video-section{
+    background-image: url(/images/mytunes/video.png);
+    min-height: 800px;
+    display: grid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    place-items: center;
+    color: white; 
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+.gift-section{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 100px 0;
+    scroll-margin: 50px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.footer-upper{
+    background-color: var(--purple600);
+    color: white;
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;  
+}
+.footer-lower{
+    background-color: var(--purple300);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+
+@media (max-width: 786px) {
+    header{
+        position: relative;
+    }
+    .container{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .nav-logo{
+        margin-bottom: 50px;
+    }
+    .hero-section h1{
+        font-size:  46px;
+    }
+    .hero-section h3{
+        font-size: 18px;
+    }
+    .hero-section p{
+        font-size: 12px;
+       margin: 0 10px;
+    }
+    .ipad-iphone-img{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 500px;
+       
+    }
+    
+}
